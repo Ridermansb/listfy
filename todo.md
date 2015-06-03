@@ -1,0 +1,1 @@
+todo: Install angular, bower
