@@ -1,6 +1,6 @@
 {
     "name": "listfy",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "listfy: An Ionic project",
     "dependencies": {
         "bower": "^1.4.1",
