@@ -6,7 +6,6 @@ describe("HomeController", function () {
         scope = $rootScope.$new();
         controller = $controller('HomeController', {
             $scope: scope
-
         });
     }));
 
