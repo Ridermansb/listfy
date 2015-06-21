@@ -1,0 +1,22 @@
+{
+  "name": "listfy",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0",
+    "angular-mocks": "~1.4.1"
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/Ridermansb/listfy",
+  "authors": [
+    "ridermansb <ridermansb@gmail.com>"
+  ],
+  "license": "GPL v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "www/lib",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1"
+  }
+}
