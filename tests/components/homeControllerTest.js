@@ -1,5 +1,4 @@
 describe("HomeController", function () {
-
     var scope, controller;
     beforeEach(module('app'));
 
