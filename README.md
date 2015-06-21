@@ -3,11 +3,13 @@
 ## Throughput Graph
 [![Throughput Graph](https://graphs.waffle.io/Ridermansb/listfy/throughput.svg)](https://waffle.io/Ridermansb/listfy/metrics)
 
+# How to build
+Just clone this repository and execute `npm install`
 
+# Source
 * File Structure from: https://scotch.io/tutorials/angularjs-best-practices-directory-structure
 
 ## Donating
-
 Support this project and others by [ridermansb](https://gratipay.com/ridermansb/) via [gratipay](https://gratipay.com/ridermansb/).
 
 [![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/ridermansb/)
