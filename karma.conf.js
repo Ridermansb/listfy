@@ -10,8 +10,6 @@ module.exports = function (config) {
 
         files: [
             'www/assets/lib/ionic/js/ionic.bundle.js',
-            'www/assets/lib/ngCordova/dist/ng-cordova.js',
-            'www/assets/lib/ionic-service-core/ionic-core.js',
             'www/assets/lib/angular-mocks/angular-mocks.js',
             'www/app/app.js',
             'www/app/components/**/*Controller.js',

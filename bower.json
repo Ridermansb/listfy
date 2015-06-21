@@ -2,9 +2,7 @@
   "name": "listfy",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.0.0",
-    "angular-mocks": "~1.4.1",
-    "ngCordova": "~0.1.17-alpha",
-    "ionic-service-core": "~0.1.7"
+    "angular-mocks": "~1.4.1"
   },
   "version": "0.0.0",
   "homepage": "https://github.com/Ridermansb/listfy",
@@ -15,7 +13,6 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "www/lib",
     "www/lib",
     "tests"
   ],
