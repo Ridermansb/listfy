@@ -23,6 +23,7 @@ module.exports = function () {
 
             window.assert = chai.assert;
             window.expect = chai.expect;
+            
             wallaby.start();
         }
     };
