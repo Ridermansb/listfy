@@ -1,6 +1,8 @@
 [![Build Status](https://semaphoreci.com/api/v1/projects/edf2ae1a-b10e-447c-a6e4-e8a3998ce4ef/462856/badge.svg)](https://semaphoreci.com/ridermansb/listfy) [![Test Coverage](https://codeclimate.com/github/Ridermansb/listfy/badges/coverage.svg)](https://codeclimate.com/github/Ridermansb/listfy/coverage) [![Code Climate](https://codeclimate.com/github/Ridermansb/listfy/badges/gpa.svg)](https://codeclimate.com/github/Ridermansb/listfy)  [![Stories in Ready](https://badge.waffle.io/Ridermansb/listfy.png?label=ready&title=ready%20stories)](http://waffle.io/Ridermansb/listfy)  [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/Ridermansb/listfy)
 
 ## Throughput Graph
+
+[![Join the chat at https://gitter.im/Ridermansb/listfy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Ridermansb/listfy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Throughput Graph](https://graphs.waffle.io/Ridermansb/listfy/throughput.svg)](https://waffle.io/Ridermansb/listfy/metrics)
 
 # How to build
