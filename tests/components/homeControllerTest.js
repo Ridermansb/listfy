@@ -23,12 +23,12 @@ describe("HomeController", function () {
         expect(scope.products).to.have.length(0);
     });
 
-    describe('with state', function () {
-        it('map to /', function() {
+    describe('with home state', function () {
+        it('should map to /', function() {
             expect(state.url).to.equal('/');
         });
 
-        it('with homeView template', function() {
+        it('shoukd have homeView templateUrl', function() {
             expect(state.templateUrl).to.equal('app/components/home/homeView.html');
         });
     });

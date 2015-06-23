@@ -18,7 +18,7 @@ angular.module('app', ['ionic', 'ui.router', 'ngCordova'])
         });
     })
 
-    .config(['$stateProvider', function ($stateProvider, $urlRouterProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
