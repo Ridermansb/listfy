@@ -1,5 +1,5 @@
 describe("HomeController", function () {
-    var scope, controller, state, rootScope, urlRouterProvider ;
+    var scope, controller, state, rootScope, urlRouterProvider;
 
     beforeEach(module('ui.router'));
     beforeEach(module('app'));
@@ -24,11 +24,11 @@ describe("HomeController", function () {
     });
 
     describe('with home state', function () {
-        it('should map to /', function() {
+        it('should map to /', function () {
             expect(state.url).to.equal('/');
         });
 
-        it('shoukd have homeView templateUrl', function() {
+        it('shoukd have homeView templateUrl', function () {
             expect(state.templateUrl).to.equal('app/components/home/homeView.html');
         });
     });
