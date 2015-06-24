@@ -1,7 +1,8 @@
 describe("HomeController", function () {
-    var scope, controller, state, rootScope, urlRouterProvider;
+    var scope, controller, state, rootScope;
 
     beforeEach(module('ui.router'));
+    beforeEach(module('ng-mfb'));
     beforeEach(module('app'));
 
     beforeEach(inject(function ($rootScope, $state, $controller) {
@@ -30,6 +31,10 @@ describe("HomeController", function () {
 
         it('shoukd have homeView templateUrl', function () {
             expect(state.templateUrl).to.equal('app/components/home/homeView.html');
+        });
+
+        it('should have footerView defined in footer views', function () {
+            expect(state.views.footer).to.eql({templateUrl: 'app/components/home/footerView.html'});
         });
     });
 });

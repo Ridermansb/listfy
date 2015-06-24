@@ -23,6 +23,11 @@ angular.module('app', ['ionic', 'ui.router', 'ngCordova'])
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/components/home/homeView.html'
+                templateUrl: 'app/components/home/homeView.html',
+                views: {
+                    footer: {
+                        templateUrl: 'app/components/home/footerView.html'
+                    }
+                }
             });
     }]);

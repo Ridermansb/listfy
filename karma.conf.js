@@ -13,6 +13,7 @@ module.exports = function (config) {
             'www/assets/lib/ngCordova/dist/ng-cordova.js',
             'www/assets/lib/angular-ui-router/release/angular-ui-router.js',
             'www/assets/lib/angular-mocks/angular-mocks.js',
+            'www/assets/lib/ng-mfb/src/mfb-directive.js',
             'www/app/app.js',
             'www/app/components/**/*Controller.js',
             'www/app/components/**/*Service.js',
