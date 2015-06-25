@@ -55,4 +55,4 @@ plugins/
 
 # App specific
 www/assets/lib/
-tests/coverage/
+test/coverage

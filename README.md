@@ -4,7 +4,10 @@
 [![Throughput Graph](https://graphs.waffle.io/Ridermansb/listfy/throughput.svg)](https://waffle.io/Ridermansb/listfy/metrics)
 
 # How to build
-Just clone this repository and execute `npm install`
+Just clone this repository and execute `npm start`
+
+# How to test
+Just clone this repository and execute `npm test`
 
 # Source
 * File Structure from: https://scotch.io/tutorials/angularjs-best-practices-directory-structure
