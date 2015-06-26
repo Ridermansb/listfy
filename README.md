@@ -24,6 +24,8 @@
 
  * `gh re --fork listfy --user ridermansb --clone`
  * Show on github
+ * `cd listfy`
+ * `npm install`
  * `npm test`
  * Make your changes
  *  `git cm "fix #x summary"` *replace summary with your comment*
