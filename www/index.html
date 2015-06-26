@@ -7,23 +7,24 @@
 
     <link href="assets/lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 <body ng-app="app">
-    <ion-pane>
-        <ion-header-bar class="bar-stable bar-header bar-energized">
-            <h1 class="title ">Listfy</h1>
-        </ion-header-bar>
-        <ion-content>
+    <ion-header-bar class="bar-stable bar-header bar-energized">
+        <h1 class="title">Listfy</h1>
+    </ion-header-bar>
 
-        </ion-content>
-    </ion-pane>
+    <div ui-view> </div>
 
     <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
+    <script src="assets/lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="assets/lib/ng-lodash/build/ng-lodash.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <script src="app/app.js"></script>
     <script src="app/components/home/homeController.js"></script>
+    <script src="app/shared/product.js"></script>
+    <script src="app/shared/productsService.js"></script>
 </body>
 </html>

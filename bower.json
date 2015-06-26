@@ -1,22 +1,29 @@
 {
-  "name": "listfy",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0",
-    "angular-mocks": "~1.4.1"
-  },
-  "version": "0.0.2",
-  "homepage": "https://github.com/Ridermansb/listfy",
-  "authors": [
-    "ridermansb <ridermansb@gmail.com>"
-  ],
-  "license": "GPL v3",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "www/lib",
-    "tests"
-  ],
-  "dependencies": {
-    "angular": "~1.4.1"
-  }
+    "name": "listfy",
+    "devDependencies": {
+        "ionic": "driftyco/ionic-bower#1.0.0",
+        "angular-mocks": "~1.4.1"
+    },
+    "version": "0.0.2",
+    "homepage": "https://github.com/Ridermansb/listfy",
+    "authors": [
+        "ridermansb <ridermansb@gmail.com>"
+    ],
+    "license": "GPL v3",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "www/lib",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.4.1",
+        "ngCordova": "~0.1.17-alpha",
+        "angular-ui-router": "~0.2.15",
+        "ng-lodash": "~0.2.3"
+    },
+    "resolutions": {
+        "angular": "~1.4.1",
+        "angular-ui-router": "~0.2.15"
+    }
 }
