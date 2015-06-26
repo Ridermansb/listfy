@@ -22,7 +22,6 @@
 
  ## Tip with [gh](http://nodegh.io/)
 
- * `gh re -l`
  * `gh re --fork listfy --user ridermansb --clone`
  * Show on github
  * `npm test`
