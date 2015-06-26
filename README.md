@@ -23,8 +23,13 @@
 
   - View sprints retrospectives: http://bit.ly/**lsf-retrospective**
   - Add feedback for current sprint: http://bit.ly/**lsf-retrospective-add**
+  - QR Code Image for AppId: http://bit.ly/**lsf-ionic-appid**
   - Online view:  http://listfy.herokuapp.com
   - Ionic App View: https://apps.ionic.io/app/**4b746025**
+
+**QR Code for AppID**
+
+![Imgur](http://i.imgur.com/yeR7MbE.png)
 
 # Source
 * File Structure from: https://scotch.io/tutorials/angularjs-best-practices-directory-structure
