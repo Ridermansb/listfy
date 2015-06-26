@@ -22,8 +22,6 @@
 
  ## Tip with [gh](http://nodegh.io/)
 
- * `gh user --logout`
- * `gh user --login`
  * `gh re -l`
  * `gh re --fork listfy --user ridermansb --clone`
  * Show on github
