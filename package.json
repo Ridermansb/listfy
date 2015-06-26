@@ -1,6 +1,9 @@
 {
     "name": "listfy",
     "version": "0.0.3",
+    "engines": {
+        "node": "0.12.x"
+    },
     "description": "listfy: An Ionic project",
     "dependencies": {
         "express": "~4.13.0",
