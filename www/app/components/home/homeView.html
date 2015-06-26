@@ -1,0 +1,39 @@
+<ion-pane>
+    <ion-content>
+        <div class="list card" ng-repeat="product in products">
+            <div class="item item-avatar">
+                <img src="http://placehold.it/40?text=Hi.jpg">
+                <h2>{{ product.name }}</h2>
+                <p>
+                    <a href="#" class="subdued">{{ product.quantity }} units</a>
+                    <!--<a href="#" class="subdued">~R$ 2,50 unit</a>-->
+                </p>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#" ng-click="product.increaseQuantity()">
+                    <i class="icon ion-android-add-circle"></i> Add one
+                </a>
+                <a class="tab-item" href="#" ng-click="product.decreaseQuantity()">
+                    <i class="icon ion-android-remove-circle"></i> Remove one
+                </a>
+                <a class="tab-item assertive" href="#" ng-click="$parent.remove(product)">
+                    <i class="icon ion-ios-trash"></i>
+                    Remover da lista
+                </a>
+            </div>
+        </div>
+    </ion-content>
+
+    <ion-footer-bar align-title="center">
+        <form ng-submit="add(model.productName)" novalidate>
+            <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
+                <label class="item-input-wrapper">
+                    <input ng-model="model.productName" value="" placeholder="What you need to buy" required minlength="1" maxlength="256" type="text" />
+                </label>
+                <div class="footer-btn-wrap">
+                    <button class="button button-icon icon ion-android-add-circle footer-btn" type="submit"> </button>
+                </div>
+            </ion-footer-bar>
+        </form>
+    </ion-footer-bar>
+</ion-pane>
