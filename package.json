@@ -41,7 +41,8 @@
         {
             "platform": "android",
             "locator": "browser"
-        }
+        },
+        "android"
     ],
     "main": "gulpfile.js",
     "scripts": {

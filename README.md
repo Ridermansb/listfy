@@ -23,11 +23,10 @@
  ## Tip with [gh](http://nodegh.io/)
 
  * `gh re --fork listfy --user ridermansb --clone`
- * Show on github
  * `cd listfy`
  * `npm install`
  * `npm test`
- * Make your changes
+ * Make your changes :)
  *  `git cm "fix #x summary"` *replace summary with your comment*
  * `git push`
  * `gh pr --submit ridermansb -b develop --description "same description"` *please add same drescription*
