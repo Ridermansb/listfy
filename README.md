@@ -19,7 +19,7 @@
  - `git cm "fix #x summary"` *replace summary with your comment*
  - Made a pull request
 
- 
+
  ## Tip with [gh](http://nodegh.io/)
 
  * `gh user --logout`
@@ -31,7 +31,7 @@
  * Make your changes
  *  `git cm "fix #x summary"` *replace summary with your comment*
  * `git push`
- * `gh pr --submit ridermansb`
+ * `gh pr --submit ridermansb --description "same description"` *please add same drescription*
 
 # Useful
 
