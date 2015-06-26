@@ -32,11 +32,11 @@
 
 # Useful
 
-  - View sprints retrospectives: http://bit.ly/**lsf-retrospective**
-  - Add feedback for current sprint: http://bit.ly/**lsf-retrospective-add**
-  - QR Code Image for AppId: http://bit.ly/**lsf-ionic-appid**
-  - Online view:  http://listfy.herokuapp.com
-  - Ionic App View: https://apps.ionic.io/app/**4b746025**
+  - View sprints retrospectives: [bit.ly/**lsf-retrospective**](http://bit.ly/lsf-retrospective)
+  - Add feedback for current sprint: [bit.ly/**lsf-retrospective-add**](http://bit.ly/lsf-retrospective-add)
+  - QR Code Image for AppId: [bit.ly/**lsf-ionic-appid**](http://bit.ly/lsf-ionic-appid)
+  - Online view:  [listfy.herokuapp.com](http://listfy.herokuapp.com)
+  - Ionic App View: [apps.ionic.io/app/**4b746025**](https://apps.ionic.io/app/4b746025)
 
 **QR Code for AppID**
 
