@@ -1,6 +1,6 @@
 {
     "name": "listfy",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "listfy: An Ionic project",
     "dependencies": {
         "express": "~4.13.0",
