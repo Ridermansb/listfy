@@ -6,8 +6,14 @@
 # How to build
 Just clone this repository and execute `npm start`
 
-# How to test
-Just clone this repository and execute `npm test`
+To run our tests `npm test`
+
+# Useful
+
+  - View sprints retrospectives: http://bit.ly/**lsf-retrospective**
+  - Add feedback for current sprint: http://bit.ly/**lsf-retrospective-add**
+  - Online view:  http://listfy.herokuapp.com
+  - Ionic App View: https://apps.ionic.io/app/**4b746025**
 
 # Source
 * File Structure from: https://scotch.io/tutorials/angularjs-best-practices-directory-structure
