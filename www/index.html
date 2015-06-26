@@ -9,27 +9,20 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body ng-app="app">
-<ion-pane>se
     <ion-header-bar class="bar-stable bar-header bar-energized">
-        <h1 class="title ">Listfy</h1>
+        <h1 class="title">Listfy</h1>
     </ion-header-bar>
 
-    <ion-content>
-        <div ui-view></div>
-    </ion-content>
+    <div ui-view> </div>
 
-    <ion-footer-bar ui-view="footer" align-title="center"> </ion-footer-bar>
+    <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
+    <script src="assets/lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
 
-</ion-pane>
-
-<script src="assets/lib/ionic/js/ionic.bundle.js"></script>
-<script src="assets/lib/ngCordova/dist/ng-cordova.js"></script>
-<script src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
-
-<!-- cordova script (this will be a 404 during development) -->
-<script src="cordova.js"></script>
-<script src="app/app.js"></script>
-<script src="app/components/home/homeController.js"></script>
-<script src="app/shared/productsService.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/shared/productsService.js"></script>
 </body>
 </html>

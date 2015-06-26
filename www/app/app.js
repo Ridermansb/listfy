@@ -4,7 +4,6 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('app', ['ionic', 'ui.router', 'ngCordova'])
-
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard for form inputs)
@@ -16,17 +15,13 @@ angular.module('app', ['ionic', 'ui.router', 'ngCordova'])
             }
         });
     })
-
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/components/home/homeView.html',
-                views: {
-                    footer: {
-                        templateUrl: 'app/components/home/footerView.html'
-                    }
-                }
+                controller: 'HomeController',
+                templateUrl: 'app/components/home/homeView.html'
             });
+        ;
     }]);

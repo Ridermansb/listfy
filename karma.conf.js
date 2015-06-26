@@ -1,9 +1,7 @@
 module.exports = function (config) {
     config.set({
-
         basePath: '',
-        frameworks: ['mocha', 'sinon-chai'],
-
+        frameworks: ['mocha', 'chai-things', 'sinon-chai'],
         files: [
             'www/assets/lib/ionic/js/ionic.bundle.js',
             'www/assets/lib/ngCordova/dist/ng-cordova.js',
@@ -16,20 +14,15 @@ module.exports = function (config) {
             'www/app/shared/**/*Service.js',
             'test/**/*Test.js'
         ],
-
         exclude: [],
-
         preprocessors: {
             'www/app/**/*.js': ['coverage']
         },
-
         reporters: ['coverage', 'progress'],
-
         coverageReporter: {
             type: 'lcovonly',
             dir: 'test/coverage/'
         },
-
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
