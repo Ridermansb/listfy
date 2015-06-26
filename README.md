@@ -6,10 +6,18 @@
 |**What tools we use?**  |[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/Ridermansb/listfy)|
 |**Throughput**|[![Throughput Graph](https://graphs.waffle.io/Ridermansb/listfy/throughput.svg)](https://waffle.io/Ridermansb/listfy/metrics)|
 
-# How to build
-Just clone this repository and execute `npm start`
+# How to build?
 
-To run our tests `npm test`
+ * Clone this repository and execute `npm install`
+ * Run our tests `npm test`
+
+# How to contribute?
+
+ - Fork and clone this repo
+ - Read and execute #How to build? session
+ - Make your changes
+ - `git cm "fix #x summary"` *replace summary with your comment*
+ - Made a pull request
 
 # Useful
 
