@@ -19,7 +19,8 @@
     "dependencies": {
         "angular": "~1.4.1",
         "ngCordova": "~0.1.17-alpha",
-        "angular-ui-router": "~0.2.15"
+        "angular-ui-router": "~0.2.15",
+        "ng-lodash": "~0.2.3"
     },
     "resolutions": {
         "angular": "~1.4.1",

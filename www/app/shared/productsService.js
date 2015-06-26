@@ -1,11 +1,8 @@
 (function () {
     angular.module('app')
-        .factory('ProductsService', function () {
+        .factory('ProductsService', function (Product) {
             var save = function (productName) {
-                return {
-                    name: productName,
-                    totalToBuy: 1
-                };
+                return new Product(productName);
             };
 
             return {

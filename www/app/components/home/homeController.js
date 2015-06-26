@@ -1,7 +1,7 @@
 (function () {
     var app = angular.module('app');
 
-    var HomeController = function ($scope, ProductsService) {
+    var HomeController = function ($scope, lodash, ProductsService) {
         $scope.products = [];
 
         $scope.add = function(productName) {
@@ -9,6 +9,9 @@
             $scope.products.push(product);
             $scope.model.productName = '';
             return product;
+        };
+        $scope.remove = function (product) {
+            lodash.remove($scope.products, product);
         };
 
         $scope.model= {

@@ -3,6 +3,7 @@ describe("HomeController", function () {
     var ProductsService;
 
     beforeEach(module('ui.router'));
+    beforeEach(module('ngLodash'));
     beforeEach(module('app'));
 
     beforeEach(inject(function ($rootScope, _$state_, _$controller_, _ProductsService_) {
@@ -16,6 +17,10 @@ describe("HomeController", function () {
             ProductsService: ProductsService
         });
     }));
+
+    module(function($provide) {
+        $provide.service('$scope', $scope);
+    });
 
     it("should have a scope variable defined", function () {
         expect($scope).to.exist;
@@ -42,6 +47,17 @@ describe("HomeController", function () {
         expect($scope.products).to.include.something.with.property('name', productName);
     });
 
+    it('should remove product from list after remove a product', function () {
+        var productName = 'an product';
+        $scope.add(productName + '1');
+        var productToRemove = $scope.add(productName + '2');
+        $scope.add(productName + '3');
+
+        $scope.remove(productToRemove);
+
+        expect($scope.products).to.not.include.something.that.deep.equals(productToRemove);
+    });
+
     it('should empty productName field after save', function () {
         var productName = 'an product';
         $scope.add(productName);
@@ -52,7 +68,35 @@ describe("HomeController", function () {
     it('should 1 unit after save', function () {
         var productName = 'an product';
         var productAdded = $scope.add(productName);
-        expect(productAdded.totalToBuy).to.equal(1);
+        expect(productAdded.quantity).to.equal(1);
+    });
+
+    it('should increase total to buy on click button', function () {
+        var productName = 'an product';
+        var productAdded = $scope.add(productName);
+
+        productAdded.increaseQuantity();
+
+        expect(productAdded.quantity).to.equal(2);
+    });
+
+    it('should decrease total to buy on click button', function () {
+        var productName = 'an product';
+        var productAdded = $scope.add(productName);
+
+        productAdded.increaseQuantity();
+        productAdded.decreaseQuantity();
+
+        expect(productAdded.quantity).to.equal(1);
+    });
+
+    it('the minimal for quantity is 1, cant allow decrease more whe quantity is 1 on click button', function () {
+        var productName = 'an product';
+        var productAdded = $scope.add(productName);
+
+        productAdded.decreaseQuantity();
+
+        expect(productAdded.quantity).to.equal(1);
     });
 
     describe('state', function () {
