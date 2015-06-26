@@ -31,7 +31,7 @@
  * Make your changes
  *  `git cm "fix #x summary"` *replace summary with your comment*
  * `git push`
- * `gh pr --submit ridermansb --description "same description"` *please add same drescription*
+ * `gh pr --submit ridermansb -b develop --description "same description"` *please add same drescription*
 
 # Useful
 
