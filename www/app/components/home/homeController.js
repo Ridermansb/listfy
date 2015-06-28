@@ -1,17 +1,25 @@
 (function () {
     var app = angular.module('app');
 
-    var HomeController = function ($scope, lodash, ProductsService) {
-        $scope.products = [];
-
+    var HomeController = function ($scope, ProductsService) {
         $scope.add = function(productName) {
-            var product = ProductsService.save(productName);
-            $scope.products.push(product);
+            var product = ProductsService.getBy(productName);
+            if (product) {
+                product.quantity++;
+            } else {
+                product = ProductsService.save(productName);
+            }
+
             $scope.model.productName = '';
             return product;
         };
+
         $scope.remove = function (product) {
-            lodash.remove($scope.products, product);
+            ProductsService.remove(product);
+        };
+
+        $scope.getAll = function() {
+            return ProductsService.getAll();
         };
 
         $scope.model= {

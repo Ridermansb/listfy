@@ -27,7 +27,7 @@ describe("HomeController", function () {
     });
 
     it("should have a accounts array", function () {
-        expect($scope.products).to.have.length(0);
+        expect($scope.getAll()).to.have.length(0);
     });
 
     it("should have a model defined", function () {
@@ -38,13 +38,13 @@ describe("HomeController", function () {
         var productName = 'an product';
         var spySave = sinon.spy(ProductsService, 'save');
         $scope.add(productName);
-        expect(spySave).to.be.calledWith(productName);
+        expect(spySave).to.be.calledWith(sinon.match(productName));
     });
 
     it('should add product into list after save a product', function () {
         var productName = 'an product';
         $scope.add(productName);
-        expect($scope.products).to.include.something.with.property('name', productName);
+        expect($scope.getAll()).to.include.something.with.property('name', productName);
     });
 
     it('should remove product from list after remove a product', function () {
@@ -55,7 +55,7 @@ describe("HomeController", function () {
 
         $scope.remove(productToRemove);
 
-        expect($scope.products).to.not.include.something.that.deep.equals(productToRemove);
+        expect($scope.getAll()).to.not.include.something.that.deep.equals(productToRemove);
     });
 
     it('should empty productName field after save', function () {
@@ -88,6 +88,23 @@ describe("HomeController", function () {
         productAdded.decreaseQuantity();
 
         expect(productAdded.quantity).to.equal(1);
+    });
+
+    it('should increase quantity when user add a product that exist', function () {
+        var productName = 'an product';
+        $scope.add(productName);
+        var productAddAgain = $scope.add(productName);
+
+        expect(productAddAgain.quantity).to.equal(2);
+    });
+
+    it('should not add product with same name', function () {
+        var productName = 'an product';
+        var firstAdd = $scope.add(productName);
+        $scope.add(productName);
+
+        expect(firstAdd.quantity).to.equal(2);
+        expect($scope.getAll()).to.have.length(1);
     });
 
     it('the minimal for quantity is 1, cant allow decrease more whe quantity is 1 on click button', function () {

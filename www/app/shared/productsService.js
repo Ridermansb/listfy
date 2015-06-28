@@ -1,13 +1,34 @@
 (function () {
-    angular.module('app')
-        .factory('ProductsService', function (Product) {
-            var save = function (productName) {
-                return new Product(productName);
-            };
+    var ProductsService = function (Product, lodash) {
 
-            return {
-                save: save
-            };
+        var products = [];
 
-        });
+        var getBy = function (productName) {
+            return lodash.find(products, 'name', productName);
+        };
+
+        var save = function (productName) {
+            var product = new Product(productName);
+            products.push(product);
+            return product;
+        };
+
+        var getAll = function() {
+            return products;
+        };
+
+        var remove = function(product) {
+            return lodash.remove(products, product);
+        };
+
+        return {
+            save: save,
+            getBy: getBy,
+            getAll: getAll,
+            remove: remove
+        };
+
+    };
+
+    angular.module('app').factory('ProductsService', ProductsService);
 }());
