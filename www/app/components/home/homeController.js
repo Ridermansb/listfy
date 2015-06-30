@@ -3,6 +3,11 @@
 
     var HomeController = function ($scope, ProductsService) {
         $scope.add = function(productName) {
+
+            if (!productName) {
+                throw "Product name cold not be empty!";
+            }
+
             var product = ProductsService.getBy(productName);
             if (product) {
                 product.quantity++;
