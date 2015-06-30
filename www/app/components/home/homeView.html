@@ -25,13 +25,13 @@
     </ion-content>
 
     <ion-footer-bar align-title="center">
-        <form ng-submit="add(model.productName)" novalidate>
+        <form name="productForm" ng-submit="add(model.productName)" novalidate>
             <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
                 <label class="item-input-wrapper">
                     <input ng-model="model.productName" value="" placeholder="What you need to buy" required minlength="1" maxlength="256" type="text" />
                 </label>
                 <div class="footer-btn-wrap">
-                    <button class="button button-icon icon ion-android-add-circle footer-btn" type="submit"> </button>
+                    <button ng-disabled="productForm.$invalid" class="button button-icon icon ion-android-add-circle footer-btn" type="submit"> </button>
                 </div>
             </ion-footer-bar>
         </form>

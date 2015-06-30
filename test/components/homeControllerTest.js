@@ -107,6 +107,11 @@ describe("HomeController", function () {
         expect($scope.getAll()).to.have.length(1);
     });
 
+
+    it('should throw exception when add empty product name', function () {
+        expect(function() { $scope.add(''); }).to.throw();
+    });
+
     it('the minimal for quantity is 1, cant allow decrease more whe quantity is 1 on click button', function () {
         var productName = 'an product';
         var productAdded = $scope.add(productName);
