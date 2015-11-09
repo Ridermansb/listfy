@@ -6,6 +6,8 @@
 |**What tools we use?**  |[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/Ridermansb/listfy)|
 |**Throughput**|[![Throughput Graph](https://graphs.waffle.io/Ridermansb/listfy/throughput.svg)](https://waffle.io/Ridermansb/listfy/metrics)|
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Ridermansb/listfy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 # How to build?
 
  * Clone this repository and execute `npm install`
